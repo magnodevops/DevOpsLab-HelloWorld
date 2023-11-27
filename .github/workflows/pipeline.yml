@@ -47,6 +47,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+          # Atualiza o Flask
+          pip install --upgrade Flask
           
       - name: Integrations Test
         run: | 
