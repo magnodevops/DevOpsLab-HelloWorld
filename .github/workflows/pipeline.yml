@@ -51,6 +51,9 @@ jobs:
           # Atualiza o Flask
           pip install --upgrade Flask
 
+          # Atualiza o Pip
+          pip install --upgrade pip
+
       - name: Integrations Test
         run: | 
           python test.py
